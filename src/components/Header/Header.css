@@ -1,0 +1,26 @@
+.header {
+    position: sticky !important;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 60px;
+    padding: 20px 20px;
+    border-bottom: 1px solid whitesmoke;
+    background-color: white;
+    z-index: 999;
+}
+
+.header__left > img {
+    object-fit: contain;
+}
+
+.header__right{
+    display: flex;
+    flex: 0.5;
+    justify-content: space-evenly;
+}
+
+.MuiTypography-h5 {
+    color: #6C63FF;
+}

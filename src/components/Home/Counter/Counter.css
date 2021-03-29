@@ -1,0 +1,64 @@
+.counter {
+    padding: 20px;
+    height: 60%; 
+    flex: 0.45 !important;
+    flex-direction: column;
+    min-width: 500px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 2px 2px rgb(0,0,0, 0.12) !important;
+}
+
+.counter__header {
+    display: flex;
+    flex-direction: column;
+    color: #6C63FF;
+    margin-bottom: 100px;
+}
+
+.counter__header > img {
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+.counter__body {
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.counter__body > .MuiTypography-root {
+    color: black !important;
+}
+
+.counter__bodyButtons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between !important;
+    margin-top: 90px;
+}
+
+.increment {
+    background-color: whitesmoke !important;
+    color: #00BFA6 !important;
+    padding: 15px;
+    cursor: pointer !important;
+}
+
+.decrement {
+    background-color: whitesmoke !important;
+    color: #F50057 !important;
+    padding: 15px;
+    cursor: pointer !important;
+}
+
+.count__positive {
+    color: #00BFA6 !important;
+}
+
+.count__negative {
+    color: #F50057 !important;
+}
