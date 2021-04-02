@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    max-height: 60px;
+    max-height: 50px;
     padding: 20px 20px;
     border-bottom: 1px solid whitesmoke;
     background-color: white;
@@ -23,4 +23,12 @@
 
 .MuiTypography-h5 {
     color: #6C63FF;
+}
+
+.header__link {
+    cursor: pointer;
+}
+
+.active {
+    border-bottom: 5px solid #6C63FF;
 }

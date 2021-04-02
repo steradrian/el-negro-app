@@ -12,7 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 40px !important;
+    margin-top: 20px !important;
 }
 
 .timer__progress {
@@ -30,5 +30,21 @@
     max-width: 100px;
     font-size: 16px !important;
     color:#6C63FF;
+}
 
+.timer__buttons {
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.timer__buttons > .MuiButton-root {
+    background-color: #6C63FF;
+    padding: 10px;
+    color: white;
+}
+
+.timer__buttons > .MuiButton-root:hover {
+    background-color: #536DFE;
 }

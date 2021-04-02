@@ -1,0 +1,46 @@
+.user {
+    background-color: whitesmoke;
+    height: calc( 100vh - 91px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.user > .MuiPaper-root {
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    min-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.user > .MuiPaper-root >.MuiTypography-root > strong {
+    color: #6C63FF;
+    font-size: 28px;
+}
+
+.user > .MuiPaper-root > form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.user > .MuiPaper-root > form > input {
+    margin: 5px 0 20px 0;  
+    padding: 10px !important;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.buttons > .MuiButtonBase-root { 
+    background-color: #6C63FF !important;
+    color: white !important;
+}

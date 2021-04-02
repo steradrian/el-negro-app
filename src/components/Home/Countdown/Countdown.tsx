@@ -14,8 +14,9 @@ function Countdown() {
                     Countdown 
                 </Typography>
 
-                <CountdownTimer/>
             </div>
+
+            <CountdownTimer/>
             
         </Card>
     )

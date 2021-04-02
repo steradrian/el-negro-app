@@ -27,8 +27,8 @@ function Counter() {
                         `}>{" "}{count}</strong>
                 </Typography>
                 <div className="counter__bodyButtons">
-                    <Button className="increment" onClick={() => setCount(count+1)}>Increment</Button>
-                    <Button className="decrement" onClick={() => setCount(count-1)}>Decrement</Button>
+                    <Button className="increment" onClick={() => setCount(count+1)}><strong>Increment</strong></Button>
+                    <Button className="decrement" onClick={() => setCount(count-1)}><strong>Decrement</strong></Button>
                 </div>
             </div>
         </Card>            

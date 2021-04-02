@@ -3,10 +3,16 @@ import './Header.css';
 import elnegrologo from './elnegrologo.png';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { useHistory } from 'react-router-dom';
+import { matchPath, useHistory } from 'react-router-dom';
 
 function Header() {
     const history = useHistory();
+    const match = matchPath("/", {
+        path: "/",
+        exact: true,
+        strict: false
+    });
+    console.log(match);
     return (
         <div className="header">
             <div className="header__left">
@@ -14,20 +20,17 @@ function Header() {
             </div>
 
             <div className="header__right">
-                <IconButton onClick={() => history.push('/')}>
-                    <Typography variant="h5">
-                        Home
+                
+                <Typography variant="h5" onClick={() => history.push('/')} className={`header__link ${match ? "active" : ""}`}>
+                        <strong>Home</strong>
                     </Typography>
-                </IconButton>
-
-                <IconButton onClick={() => history.push('/users')}>
-                    <Typography variant="h5">
-                        Users
+                
+                    <Typography variant="h5" onClick={() => history.push('/users')} className={`header__link ${!match ? "active" : ""}`}>
+                        <strong>Users</strong>
                     </Typography>
-                </IconButton>
             </div>
         </div>
     )
 }
 
-export default Header
+export default Header;

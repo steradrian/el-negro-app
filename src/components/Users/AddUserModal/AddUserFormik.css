@@ -1,0 +1,36 @@
+.addUser__container {
+    background-color: white;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.addUser__container > .MuiTypography-root > strong {
+    color: #6C63FF;
+}
+
+.addUser__container > form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.addUser__container > form > input {
+    margin: 5px 0 5px 0;  
+    padding: 10px !important;
+}
+
+.error__message {
+    color: red !important;
+    margin-bottom: 10px;
+}
+
+.addUser__container > form > .MuiButtonBase-root {
+    background-color: #6C63FF !important;
+    color: white !important;
+}

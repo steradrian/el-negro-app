@@ -3,6 +3,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import './CountdownTimer.css';
+import Button from '@material-ui/core/Button'
 
 function CountdownTimer() {
     const [progress, setProgress] = useState(0);
@@ -11,7 +12,7 @@ function CountdownTimer() {
     useEffect(() => {
 
         if (isTrue === true) {
-
+               
             const timer = setInterval(() => {
                 setProgress((prevProgress) => (prevProgress >= 100 ? 0 : prevProgress + 10));
             }, 1000);
@@ -22,6 +23,7 @@ function CountdownTimer() {
             };
 
         } else { setProgress(0)}
+        
     }, [isTrue]);;
     
     return (
@@ -35,11 +37,11 @@ function CountdownTimer() {
                 </Box>
             </div>
 
-            <div className="timer__button">
-                <button onClick={() => {
+            <div className="timer__buttons">
+                <Button onClick={() => {
                     setIsTrue(true);
-                }}>Start</button>
-                <button onClick={() => setIsTrue(false)}>Reset</button>
+                }}><strong>Start</strong></Button>
+                <Button onClick={() => setIsTrue(false)}><strong>Reset</strong></Button>
             </div>
         </div>
     )
